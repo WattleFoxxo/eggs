@@ -13,7 +13,7 @@
         "Mono": "ghcr.io\/parkervcp\/yolks:mono_latest"
     },
     "file_denylist": [],
-    "startup": "mono Headless\/Resonite.exe -c .\/Config\/Config.json -l .\/Logs $(if {{ENABLE_MODLOADER}}; then echo \"-LoadAssembly \".\/Libraries\/ResoniteModLoader.dll\"\"; fi)",
+    "startup": "mono Headless\/Resonite.exe -HeadlessConfig .\/Config\/Config.json -l .\/Logs $(if {{ENABLE_MODLOADER}}; then echo \"-LoadAssembly \".\/Libraries\/ResoniteModLoader.dll\"\"; fi)",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \"World running...\"\r\n}",
